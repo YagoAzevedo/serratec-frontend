@@ -1,0 +1,45 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  color: #fff;
+  background-color: #353839;
+}
+
+input {
+  font-size: 20px;
+}
+
+form {
+  width: 720px;
+  margin: auto;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.box {
+  background: #000;
+  padding: 10px;
+}
+
+.margem-padrao {
+  margin: 5px;
+}
+
+.input-digitavel {
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+#botao-cadastrar {
+  border: 3px solid #928e96;
+  border-radius: 25px;
+  background: #f0dbff;
+  float: right;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
