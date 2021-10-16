@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastro de Filmes">
+    <meta name="keywords" content="filme barato, filme de graça, assistir filmes, filmes nacionais, locadora popular, alugar filmes">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Locadora Virtual</title>
+</head>
+<body>
+    <script>
+        function loadMovie(){
+            const TITLE = document.querySelector('#inputTitulo').value;
+            const YEAR = document.querySelector('#inputAno').value;
+            const SINOPSE = document.querySelector('#inputSinopse').value;
+            console.log(TITLE);
+            console.log(YEAR);
+            console.log(SINOPSE);
+            
+            if(isNullEmpty(TITLE, YEAR, SINOPSE)){
+                return;
+            }
+            
+            const tableRef = document.getElementById('tabelFilmes');
+            const tbodyRef = tableRef.getElementsByTagName('tbody')[0];
+            let newRow = tableRef.insertRow(-1);
+            let newCell = newRow.insertCell(0);
+            newCell.innerHTML = TITLE;
+            newCell = newRow.insertCell(1);
+            newCell.innerHTML = YEAR;
+            newCell = newRow.insertCell(2);
+            newCell.innerHTML = SINOPSE;
+            
+            const [file] = inputFile.files;
+            if (file) {
+                const img = document.createElement("img");
+
+                img.id = 'novaImg';
+                img.height = '100';
+                img.src = URL.createObjectURL(file);
+                newCell = newRow.insertCell(3);
+                newCell.appendChild(img);
+            }
+        }
+
+        function isNullEmpty(...args){
+            for (const item of args) {
+                if(item === ""){
+                    return true;
+                }
+            }
+
+            return false;
+        }
+    </script>
+
+    <h1>Cadastrar filmes</h1>
+    
+    <form 
+        action=""
+        method="get"
+        onsubmit="return false">
+        <div>
+          <label for="inputTitulo">Digite o titulo do filme: </label>
+          <input type="text" id="inputTitulo" required/>
+        </div>
+        
+        <div>
+          <label for="inputAno">Digite o ano de lançamento do filme:</label>
+          <input type="text" id="inputAno" required/>
+        </div>
+        
+        <div>
+          <label for="inputSinopse">Insira a sinopse do filme:</label>
+          <input type="text" id="inputSinopse" required/>
+        </div>
+        
+        <div>
+          <label>for="inputFile">Insira a capa do filme:</label>
+          <input type="file" id="inputFile" accept="image/*"/>
+        </div>
+        
+        <button type="submit" onclick="loadMovie()">Cadastrar</button>
+    </form>
+
+    <br>  
+    
+    <h1>Filmes cadastrados</h1>
+    
+    <table id="tabelFilmes" border="1">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Ano de lançamento</th>
+                <th>Sinopse</th>
+                <th>Imagem</th>
+            </tr>
+        </thead>
+        <tbody id="body">
+            <tr>
+                <td>O Poderoso Chefão</td>
+                <td>1972</td>
+                <td>Uma família luta para estabelecer sua supremacia nos Estados Unidos depois da Segunda Guerra Mundial. Uma tentativa de assassinato deixa o chefão Vitto Corleone incapacitado e força os filhos Michael e Sonny a assumir os negócios.</td>
+                <td>
+                    <a href="https://www.google.com/search?q=o+poderoso+chefao" target="_blank">
+                    <img 
+                        src="./img/chefao-1972.jpg"
+                        title="O Poderoso Chefão"
+                        height="100"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Três Homens em Conflito</td>
+                <td>1966</td>
+                <td>Três bandoleiros "ajudam-se e enganam-se" mutuamente, tentando se apossarem de uma fortuna de dólares em ouro, durante a Guerra Civil americana. Belíssimo filme, com a dose certa de humor, divertido, ruidoso, movimentado, bonito, com um final antológico.
+                Um marco inesquecível da história do cinema. Destaque para o trabalho de Wallach. Com uma trilha sonora maravilhosa do grande mestre Ennio Morricone. Sérgio Leone mostrou ao mundo nesta produção, mais uma vez, toda sua genialidade. Imprescindível.</td>
+                <td>
+                    <a href="https://www.google.com/search?q=tres+homens+em+conflito" target="_blank">
+                    <img
+                        src="./img/good-1966.jpg"
+                        title="Três Homens em Conflito"
+                        height="100"/>
+                </td>
+                </tr>
+        </tbody>
+    </table>
+</body>
+</html>
