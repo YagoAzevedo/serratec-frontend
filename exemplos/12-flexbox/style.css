@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  /* display: block; */
+  flex-direction: row;
+  /* flex-direction: column; */
+
+  /* código para centralizar vertical e horizontal flex */
+  /* tanto justify-content como align-items podem ter: */
+  /*        flex-end | flex-start | space-around     */
+  /* height: 100vh;
+  justify-content: center;
+  align-items: center; */
+}
+
+.child {
+  width: 20%;
+  /* alterar width para 50% com direction row 
+     e ver que o width não é respeitado 
+     para isso deve-se colocar
+     'flex-wrap: wrap' no container */
+
+  height: 200px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.order-4 {
+  order: 3;
+}
+
+.order-3 {
+  order: 2;
+}
+.order-2 {
+  order: 2;
+}
+.order-1 {
+  order: 1;
+}
