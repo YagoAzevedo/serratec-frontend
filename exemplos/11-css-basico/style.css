@@ -1,0 +1,76 @@
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 45px;
+  color: crimson;
+  font-weight: normal;
+}
+
+.texto-fundo-escuro {
+  line-height: 30px;
+  color: #fff;
+  background-color: #000;
+}
+
+#titulo-tamanho-diferente {
+  background-color: aqua;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+}
+
+#teste-margin-padding-border {
+  background-color: beige;
+  margin: 40px; /* espaço entre borda e outros elementos */
+  padding: 60px; /* espaço entre texto e borda */
+  border: 1px solid green;
+  /* border é a junção de border-width, border-style e border-color */
+  border-radius: 6px;
+}
+
+.lado-esquerdo {
+  float: left;
+  background-color: blueviolet;
+  width: 200px;
+  color: #fff;
+  padding: 50px;
+}
+
+.lado-direito {
+  float: right;
+  background-color: coral;
+  width: 200px;
+  color: #fff;
+  padding: 50px;
+}
+
+.posicionamento-absoluto {
+  position: absolute;
+  top: 300px;
+  left: 150px;
+  background-color: darkblue;
+  color: #fff;
+  padding: 50px;
+}
+
+.posicionamento-fixo {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  background-color: darkorange;
+  color: #fff;
+  padding: 20px;
+}
+
+.posicionamento-relativo {
+  position: relative;
+  top: 300px;
+  left: 150px;
+  background-color: deeppink;
+  color: #fff;
+  padding: 20px;
+}
+
+.bloco-maior {
+  height: 700px;
+  background-color: gold;
+}
