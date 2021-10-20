@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+
+:root {
+  --main-bg-color: brown;
+}
+
+div {
+  color: white;
+  background-color: var(--main-bg-color);
+  margin: 10px;
+  width: 150px;
+  height: 50px;
+}
+
+input {
+  color: white;
+  background-color: var(--main-bg-color);
+  margin: 10px;
+  width: 250px;
+  height: 30px;
+}
+
+textarea {
+  color: white;
+  background-color: var(--main-bg-color);
+  margin: 10px;
+  width: 150px;
+}
