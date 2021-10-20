@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastro de filmes e listagem">
+  <meta name="keyword" content="Cadastrar filmes, listar filmes, sinopse de filmes">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Atividade 03</title>
+</head>
+<body>
+  <h1>Cadastrar filmes</h1>
+<form action="">
+  <div class="cadastro-inputs">
+    <label for="input-texto">Digite o título do filme</label>
+    <input type="text" id="input-texto" placeholder="Nome do filme aqui">
+    <br>
+    <label for="input-date">Digite o ano de lançamento do filme</label>
+    <input type="date" id="input-date" placeholder="Ano do filme aqui">
+    <br>
+    <label for="input-texto">Insira a sinopse do filme</label>
+    <input type="text" id="input-texto" placeholder="Sinopse do filme aqui">
+    <br>
+    <label for="input-file">Insira a capa do filme</label>
+    <input type="file" id="input-file">
+    <br>
+    <input type="submit" id="cadastro" value="Cadastrar">
+  </div>
+  <h2>Filmes cadastrados</h2>
+  <div class="tabela-cadastro">
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Ano de lançamento</th>
+          <th>Sinopse</th>
+          <th>Imagem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>O poderoso chefão</td>
+          <td>1972</td>
+          <td>Uma família mafiosa luta para estabelecer sua supremacia nos Estados Unidos depois da Segunda Guerra Mundial. Uma tentativa de assassinato deixa o chefão Vito Corleone incapacitado e força os filhos Michael e Sonny a assumir os negócios. </td>
+          <td><img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/593/401/products/c1120-poster-the-godfather-011-eede869391e010bf5215105258637582-640-0.jpg" alt="Banner do filme" width="110"></td>
+        </tr>
+        <tr>
+          <td>Três Homens em Conflito</td>
+          <td>1966</td>
+          <td>Durante a Guerra Civil Americana, um pistoleiro misterioso e dois estrangeiros decidem juntar suas forças para encontrar um tesouro escondido. Cada um dos homens conhece apenas uma parte da localização da fortuna, o que força essa parceria. O problema é que nenhum deles têm a intenção de dividir a riqueza</td>
+          <td><img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/593/401/products/c0695-poster-tres-homens-em-conflito-011-02d3248ace60e9048d15102734229624-480-0.jpg" alt="Banner do filme" width="110"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>
+</body>
+</html>
