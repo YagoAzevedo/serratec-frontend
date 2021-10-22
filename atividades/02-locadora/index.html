@@ -10,8 +10,76 @@
     <meta name="keywords" content="filme barato, filme de graça, filme 0800, assistir filmes, alugar filmes, filmes nacionais,
     locadora popular, locadora barata">
     <link rel="icon" href="favicon.ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
     <h1>Locadora Popular</h1>
+
+    <h1>Cadastrar filmes</h1>
+
+    <form action="" method="get">
+      <div>
+        <label for="input-texto">Digite o título do filme:</label>
+        <input type="text" id="input-texto" placeholder="Filme"/>
+      </div>
+
+      <div>
+        <label for="quantity">Digite o ano de lançamento do filme:</label>
+        <input type="number" id="quantity" placeholder="1xxx"  min="1895" max="2021"/>
+      </div>
+
+      <div>
+        <label for="input-texto">Insira a sinopse do filme:</label>
+        <input type="text" id="input-texto" placeholder="Como é o filme?"/>
+      </div>
+
+      <div>
+        <label for="capa">Insira a capa do filme:</label>
+        <input type="file" id="capa" accept=".png, .jpg, .jpeg"/>
+      </div>
+
+      <input type="submit" value="Cadastrar"/>
+    </form>
+
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Filme</th>
+            <th scope="col">Ano</th>
+            <th scope="col">Sinopse</th>
+            <th scope="col">Capa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Laranja Mecânica</th>
+            <td>1971</td>
+            <td>O jovem Alex passa as noites com uma gangue de amigos briguentos.
+              <br>Depois que é preso, se submete a uma técnica de modificação de comportamento para poder ganhar sua liberdade.</td>
+            <td><img src="https://br.web.img3.acsta.net/medias/nmedia/18/91/05/58/20127559.jpg" width="100"></td>
+          </tr>
+          <tr>
+            <th scope="row">O Feitiço de Áquila</th>
+            <td>1985</td>
+            <td>O bispo de Áquila descobre que a sua amada, Isabeau está apaixonada por um cavaleiro.
+              <br>Enciumado, o bispo resolve lançar uma maldição sobre o casal,
+              <br>na qual durante o dia Isabeau se transforma em um falcão e à noite o cavaleiro toma a forma de um lobo.
+              <br>Dessa maneira o casal não pode se entregar um ao outro.
+              <br>A única esperança do apaixonado casal é o amigo Phillipe, conhecido como Rato,
+              <br>o único que conseguiu escapar das muralhas de Áquila.</td>
+            <td><img src="https://www.cafecomfilme.com.br/media/k2/items/cache/53725dc11bcbdc3072b2c1e6f01617c0_L.jpg?t=20170316_154439" width="100"></td>
+          </tr>
+          <tr>
+            <th scope="row">Marley & Eu</th>
+            <td>2008</td>
+            <td>Os recém-casados John e Jenny Grogan se mudam de Michigan para a Flórida,
+              <br>onde eles compram sua primeira casa e encontram trabalhos em competitivos jornais.
+              <br>Mais tarde, o casal adota Marley, um adorável filhote de labrador amarelo.
+              <br>Marley cresce rapidamente e se torna bastante travesso. Ainda assim, mesmo enquanto ele
+              <br>está destruindo a mobília e não obedece, ele sempre consegue alegrar John, Jenny e sua crescente família.</td>
+            <td><img src="https://i.pinimg.com/originals/0b/d2/eb/0bd2eb446c1a5d7742f88c29cc58f9fe.jpg" width="100"></td>
+          </tr>
+        </tbody>
+      </table>
 </body>
 </html>
