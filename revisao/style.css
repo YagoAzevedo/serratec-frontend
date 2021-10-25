@@ -1,0 +1,7 @@
+.esconde {
+    display: none;
+}
+
+.aparece {
+    display: flex;
+}
