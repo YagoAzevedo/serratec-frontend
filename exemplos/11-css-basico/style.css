@@ -19,8 +19,8 @@ h1 {
 }
 
 #teste-margin-padding-border {
-  background-color: beige;
-  margin: 40px; /* espaço entre borda e outros elementos */
+  background-color: rgba(255,0,0, 0.9);
+  margin: 40px 100px 150px 10px; /* espaço entre borda e outros elementos */
   padding: 60px; /* espaço entre texto e borda */
   border: 1px solid green;
   /* border é a junção de border-width, border-style e border-color */
@@ -33,6 +33,13 @@ h1 {
   width: 200px;
   color: #fff;
   padding: 50px;
+  display: none;
+}
+
+.lado-esquerdo:hover {
+  background-color: rgb(158, 82, 228);
+  cursor: pointer;
+  transition: 3s;
 }
 
 .lado-direito {
@@ -65,12 +72,16 @@ h1 {
   position: relative;
   top: 300px;
   left: 150px;
-  background-color: deeppink;
-  color: #fff;
+  background-color: #DBE09D;
+  color: rgb(95, 5, 5);
   padding: 20px;
 }
 
 .bloco-maior {
   height: 700px;
-  background-color: gold;
+  /* background-color: gold; */
+  /* background-image: url("./estrelas.gif"); */
+  background: rgb(2,0,36);
+  background: linear-gradient(174deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  background-repeat: repeat;
 }

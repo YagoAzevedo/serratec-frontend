@@ -3,28 +3,44 @@
   <head>
     <meta charset="utf-8" />
     <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <header>
+      <p>Meu exemplo</p>
+    </header>
+
+    <h1 id="titulo">Meu Titulo</h1>
+
     <table border="1">
       <thead>
         <tr>
-          <th>Nome</th>
+          <th><i>Nome</i></th>
           <th>Idade</th>
           <th>Profissão</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr class="linhas-tabela">
           <td>Yago</td>
-          <td>28</td>
-          <td>Desenvolvedor Frontend</td>
+          <td colspan="2">28</td>
+          <!-- <td>Desenvolvedor Frontend</td> -->
         </tr>
-        <tr>
+        <tr class="linhas-tabela">
           <td>Roberto</td>
           <td>30</td>
           <td>Tech lead</td>
         </tr>
       </tbody>
     </table>
+
+    <p id="paragrafo-espacado">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque nulla ab natus saepe dicta quas nam neque dolor quidem, nisi recusandae soluta maiores porro similique quae rerum! Magni, quibusdam!</p>
+
+    <!-- Usando caracteres especiais < > -->
+    &lt;p&gt;	
+
+    <footer>
+
+    </footer>
   </body>
 </html>

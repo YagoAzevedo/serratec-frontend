@@ -1,0 +1,46 @@
+* {
+    font-style: italic;   
+    margin: 0;
+    font-size: 20px;
+}
+
+body {
+    height: 100vh;
+}
+
+.linhas-tabela {
+    color: blue;
+    font-size: 2rem;
+}
+
+#titulo {
+    font-weight: 700;
+    font-size: 40px;
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+th {
+    font-style: normal;
+    padding: 30px;
+}
+
+header, footer {
+  background-color: cadetblue;
+  height: 100px;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+header > p {
+    color: white;
+}
+
+#paragrafo-espacado {
+    line-height: 50px;
+}
