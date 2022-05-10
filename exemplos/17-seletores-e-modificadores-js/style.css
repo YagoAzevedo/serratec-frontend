@@ -1,0 +1,9 @@
+.input-com-erro {
+    border-color: red;
+}
+
+.campo-obrigatorio {
+    color: red;
+    font-style: italic;
+    display: none;
+}
