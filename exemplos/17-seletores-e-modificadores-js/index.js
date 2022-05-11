@@ -8,6 +8,7 @@ function carregarProfessores() {
     }).then(response => {
         response.results.forEach(professor => {
             let colunaNome = document.createElement("td");
+            let colunaEmBranco = document.createElement("td");
         
             // Adicinando valores digitados nas colunas
             colunaNome.innerText = professor.name.first;
@@ -15,6 +16,7 @@ function carregarProfessores() {
             // Criando linha e adicionando colunas (filhos)
             const linha = document.createElement("tr");
             linha.appendChild(colunaNome);
+            linha.appendChild(colunaEmBranco);
         
             // Adicionando linha na tabela
             document.querySelector("#conteudo-tabela").appendChild(linha);
@@ -29,18 +31,13 @@ function cadastrarProfessor (event) {
     const materia = document.getElementById("input-materia").value;
 
     if (validarNome(nome)) {
-        // Criando novas colunas
-        let colunaNome = document.createElement("td");
-        let colunaMateria = document.createElement("td");
-    
-        // Adicinando valores digitados nas colunas
-        colunaNome.innerText = nome;
-        colunaMateria.innerText = materia;
-    
-        // Criando linha e adicionando colunas (filhos)
-        const linha = document.createElement("tr");
-        linha.appendChild(colunaNome);
-        linha.appendChild(colunaMateria);
+        const linha = document.createElement("tr"); // <tr></tr>
+        // linha.appendChild(colunaNome);
+        // linha.appendChild(colunaMateria);
+        linha.innerHTML = `
+            <td>${nome}</td>
+            <td>${materia}</td>
+        `;
     
         // Adicionando linha na tabela
         document.querySelector("#conteudo-tabela").appendChild(linha);
