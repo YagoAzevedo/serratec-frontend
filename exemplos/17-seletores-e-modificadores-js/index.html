@@ -11,6 +11,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -53,29 +54,34 @@
     </nav>
 
     <div class="container">
-      <div class="input-group mb-3">
-        <input
-          type="text"
-          class="form-control"
-          aria-label="Sizing example input"
-          aria-describedby="inputGroup-sizing-default"
-          placeholder="Nome"
-          id="input-nome"
-        />
-      </div>
+      <form onsubmit="cadastrarProfessor(event)">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+            placeholder="Nome"
+            id="input-nome"
+          />
+          <div class="campo-obrigatorio">
+              * Campo obrigatório
+          </div>
+        </div>
 
-      <div class="input-group mb-3">
-        <input
-          type="text"
-          class="form-control"
-          aria-label="Sizing example input"
-          aria-describedby="inputGroup-sizing-default"
-          placeholder="Matéria"
-          id="input-materia"
-        />
-      </div>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+            placeholder="Matéria"
+            id="input-materia"
+          />
+        </div>
 
-      <button type="button" class="btn btn-primary" onclick="cadastrarProfessor()">Cadastrar</button>
+        <input type="submit" class="btn btn-primary" value="Cadastrar" />
+      </form>
 
       <table class="table table-striped">
         <thead>
@@ -84,8 +90,7 @@
             <th scope="col">Matéria</th>
           </tr>
         </thead>
-        <tbody id="conteudo-tabela">
-        </tbody>
+        <tbody id="conteudo-tabela"></tbody>
       </table>
     </div>
 
